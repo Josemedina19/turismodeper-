@@ -1,0 +1,92 @@
+/* amazonia.css */
+
+/* Reset básico */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e6f2f0; /* tono suave azul verdoso para naturaleza */
+    color: #004d40; /* verde oscuro para texto */
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto 4rem auto;
+    background: #ffffff;
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    margin-bottom: 2rem;
+    font-size: 2.8rem;
+    text-shadow: 1px 1px 2px #a7d7cd;
+}
+
+section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #b2dfdb;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #004d40;
+    margin-bottom: 1rem;
+    border-left: 6px solid #00796b;
+    padding-left: 0.75rem;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: disc inside;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+ul li {
+    margin-bottom: 0.6rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #b2dfdb;
+    color: #00796b;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem 1.5rem;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.4rem;
+    }
+}

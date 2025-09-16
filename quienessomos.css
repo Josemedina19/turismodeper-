@@ -1,0 +1,71 @@
+/* ====== ESTILO GENERAL ====== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #2c3e50;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 20px;
+  font-size: 2.8rem;
+  color: #0077b6;
+  letter-spacing: 1.2px;
+}
+
+/* ====== CONTENEDOR PADRE ====== */
+.padre {
+  font-size: 1.1rem;
+  color: #34495e;
+  margin-bottom: 25px;
+}
+
+.padre p {
+  margin-bottom: 15px;
+  padding: 0 10px;
+}
+
+/* ====== IMAGEN ====== */
+.padre img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 20px auto 0;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 119, 182, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.padre img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 119, 182, 0.5);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+}

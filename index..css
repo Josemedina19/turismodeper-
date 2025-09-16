@@ -1,0 +1,322 @@
+/* ================================
+   Turismo Perú - Estilos Profesionales
+   Autor: José Rodrigo Mantilla Medina
+   Fecha: 2025
+   ================================ */
+
+
+/* Reset básico y estilo base */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    /* tipografía moderna y legible */
+    background: linear-gradient(135deg, #e0f7f5 0%, #f9fdfa 100%);
+    color: #2e3a35;
+    line-height: 1.7;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Navegación principal */
+
+nav {
+    background-color: #00695c;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    /* navegación fija al hacer scroll */
+    top: 0;
+    z-index: 1000;
+}
+
+.menu {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.menu>li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 18px 20px;
+    color: #e0f7f5;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-decoration: none;
+    letter-spacing: 0.04em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 6px 6px 0 0;
+}
+
+.menu a:hover,
+.menu a:focus {
+    background-color: #004d40;
+    color: #ffffff;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+
+/* Submenú */
+
+.submenu-parent:hover>a {
+    background-color: #004d40;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 230px;
+    background-color: #004d40;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    list-style: none;
+    padding: 0.4rem 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+    z-index: 1500;
+}
+
+.submenu-parent:hover .submenu,
+.submenu-parent:focus-within .submenu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.submenu li a {
+    padding: 12px 20px;
+    color: #b2dfdb;
+    font-size: 0.95rem;
+    display: block;
+    text-align: left;
+    transition: background-color 0.25s ease;
+}
+
+.submenu li a:hover,
+.submenu li a:focus {
+    background-color: #00796b;
+    color: #ffffff;
+    outline: none;
+}
+
+
+/* Header */
+
+header {
+    background: linear-gradient(90deg, #004d40 0%, #00796b 100%);
+    padding: 4rem 1.5rem;
+    color: white;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    animation: fadeInDown 1s ease forwards;
+}
+
+header p {
+    font-size: 1.25rem;
+    font-weight: 400;
+    max-width: 650px;
+    margin: 0 auto;
+    opacity: 0.9;
+    animation: fadeInUp 1.2s ease forwards;
+    margin-top: 1rem;
+}
+
+
+/* Animaciones suaves para header */
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 0.9;
+        transform: translateY(0);
+    }
+}
+
+
+/* Contenido principal */
+
+.contenido-principal {
+    background: #ffffff;
+    max-width: 900px;
+    margin: 3rem auto 5rem;
+    padding: 2.5rem 3rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.contenido-principal:hover {
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.contenido-principal p {
+    margin-bottom: 1.4rem;
+    font-size: 1.1rem;
+    color: #455a64;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+
+/* Resaltar visión y misión */
+
+.vision,
+.mision {
+    background: linear-gradient(135deg, #a7ffeb, #64ffda);
+    border-left: 6px solid #009688;
+    padding: 1rem 1.5rem;
+    font-style: italic;
+    color: #004d40;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 150, 136, 0.3);
+}
+
+
+/* Subtítulos */
+
+h2 {
+    color: #00796b;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: 3px solid #004d40;
+    padding-bottom: 0.4rem;
+}
+
+
+/* Destacar nombres */
+
+strong {
+    color: #004d40;
+    font-weight: 700;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #004d40;
+    color: #a7ffeb;
+    font-size: 1rem;
+    padding: 1.2rem 1rem;
+    text-align: center;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+    user-select: none;
+    margin-top: auto;
+}
+
+
+/* ========= Responsive Design ========= */
+
+@media (max-width: 1024px) {
+    .contenido-principal {
+        padding: 2rem;
+        margin: 2.5rem auto 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        position: relative;
+    }
+    .menu {
+        flex-direction: column;
+        padding: 0;
+    }
+    .menu>li {
+        flex: none;
+        width: 100%;
+        border-bottom: 1px solid #004d40;
+    }
+    .menu a {
+        padding: 15px 0;
+        font-size: 1.1rem;
+    }
+    .submenu {
+        position: static;
+        opacity: 1 !important;
+        visibility: visible !important;
+        transform: none !important;
+        box-shadow: none;
+        background-color: #00796b;
+        border-radius: 0;
+        width: 100%;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+    .submenu-parent:focus-within .submenu {
+        max-height: 500px;
+        padding: 0.5rem 0;
+    }
+    .submenu li a {
+        padding-left: 2rem;
+        font-size: 1rem;
+    }
+    header h1 {
+        font-size: 2rem;
+    }
+    header p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+    .contenido-principal {
+        padding: 1.5rem;
+        margin: 2rem 1rem 3rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+}

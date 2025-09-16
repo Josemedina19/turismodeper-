@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turismo Perú</title>
+    <link rel="stylesheet" href="index..css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        
+        nav {
+            background-color: #004d40;
+        }
+        
+        .menu {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .menu li {
+            position: relative;
+        }
+        
+        .menu>li {
+            flex: 1;
+        }
+        
+        .menu a {
+            display: block;
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .menu a:hover {
+            background-color: #00695c;
+        }
+        
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #00695c;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            z-index: 1;
+            width: 250px;
+        }
+        
+        .submenu li a {
+            padding: 10px 15px;
+            text-align: left;
+        }
+        
+        .submenu-parent:hover .submenu {
+            display: block;
+        }
+        
+        header {
+            padding: 2rem;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #004d40;
+        }
+        
+        .contenido-principal {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+            background-color: #ffffff;
+        }
+        
+        h2 {
+            color: #00695c;
+            margin-top: 2rem;
+        }
+        
+        p {
+            text-align: justify;
+        }
+        
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <ul class="menu">
+            <li><a href="quienessomos.html">Quiénes Somos</a></li>
+            <li><a href="visión.html">Visión</a></li>
+            <li><a href="misión.html">Misión</a></li>
+            <li class="submenu-parent">
+                <a href="#">Turismo</a>
+                <ul class="submenu">
+                    <li><a href="vallesagrado.html">Cusco y el Valle Sagrado</a></li>
+                    <li><a href="titicaca.html">Lago Titicaca</a></li>
+                    <li><a href="cañoldecolca.html">Cañón del Colca</a></li>
+                    <li><a href="ParqueNacionaldeHuascaran.html">Parque Nacional Huascarán</a></li>
+                    <li><a href="barrancoylima.html">Barranco y Miraflores</a></li>
+                    <li><a href="oasishuacachina.html">Oasis de Huacachina</a></li>
+                    <li><a href="canchan.html">Chan Chan</a></li>
+                    <li><a href="amazoniaperuana.html">Amazonía Peruana</a></li>
+                    <li><a href="parquenacional.html">Nacional del Manu y Tambopata</a></li>
+                    <li><a href="kuelap.html">Kuélap</a></li>
+            </li>
+            </ul>
+            </li>
+            <li><a href="contáctenos.html">Contáctenos</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Bienvenido a Turismo Perú</h1>
+        <p>Explora los destinos más increíbles de nuestro país.</p>
+    </header>
+
+    <section class="contenido-principal">
+        <p class="vision">
+            Visualizamos un futuro en el que nuestra institución sea reconocida por su excelencia y compromiso. Aspiramos a ser líderes en innovación y calidad. Queremos formar personas íntegras, fomentar la inclusión, el desarrollo sostenible, la creatividad y la
+            mejora continua.
+        </p>
+
+        <p class="mision">
+            Nuestra misión es ofrecer un servicio de calidad, formar personas comprometidas con sus valores, promover la educación integral, impulsar el desarrollo sostenible, la innovación y ser un referente de transformación positiva para nuestra comunidad.
+        </p>
+
+        <h2>La Costa: Historia, Aventura y Sabor</h2>
+        <p>La zona costera del Perú, bañada por el océano Pacífico, representa la entrada principal al país. Aquí se mezclan las raíces prehispánicas y coloniales con el dinamismo moderno de las ciudades.</p>
+
+        <p><strong>Lima:</strong> Esta ciudad, conocida como la “Ciudad de los Reyes”, es el centro cultural y culinario del país. Su Centro Histórico, reconocido por la UNESCO como Patrimonio de la Humanidad, alberga sitios emblemáticos como la Plaza Mayor
+            y la Catedral de Lima.</p>
+
+        <p><strong>Ica y Nazca:</strong> Al sur de Lima, esta región árida ofrece vivencias únicas. La Reserva de Paracas sorprende con su rica vida silvestre y paisajes marinos. Las misteriosas Líneas de Nazca, con más de 1,500 años de antigüedad, continúan
+            asombrando al mundo.</p>
+
+        <p><strong>Trujillo y Chiclayo:</strong> Estas ciudades del norte permiten explorar las culturas Mochica y Chimú. La Huaca de la Luna y el Museo Tumbas Reales de Sipán revelan importantes hallazgos arqueológicos.</p>
+
+        <h2>La Sierra: La Grandeza de los Andes</h2>
+        <p>El corazón del Perú está dominado por la majestuosa Cordillera de los Andes, con paisajes extraordinarios, cultura ancestral y una profunda conexión con el legado incaico.</p>
+
+        <p><strong>Cusco y el Valle Sagrado:</strong> Cusco, antigua capital del Imperio Inca, fusiona lo incaico y colonial. El Valle Sagrado y pueblos como Pisac y Ollantaytambo son antesala de Machu Picchu.</p>
+
+        <p><strong>Machu Picchu:</strong> Una de las Siete Maravillas del Mundo, esta ciudadela se encuentra en la cima de una montaña, ofreciendo una experiencia visual y espiritual inolvidable.</p>
+
+        <p><strong>Arequipa:</strong> “La Ciudad Blanca”, rodeada de volcanes, destaca por su arquitectura de sillar. El Cañón del Colca, cercano, es el hogar del majestuoso cóndor andino.</p>
+
+        <p><strong>Puno y el Lago Titicaca:</strong> En las orillas del lago navegable más alto del planeta, Puno y sus islas flotantes ofrecen tradiciones ancestrales y paisajes legendarios.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Turismo Perú - derechos de autor: José Rodrigo Mantilla Medina
+    </footer>
+
+</body>
+
+</html>

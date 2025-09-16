@@ -1,0 +1,92 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf8f5; /* Color suave y natural */
+    color: #3e3e3e;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Título principal */
+h1 {
+    font-size: 2.8rem;
+    color: #5d4037; /* Marrón tierra */
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Secciones */
+section {
+    margin-bottom: 45px;
+    border-left: 6px solid #a1887f; /* Marrón claro */
+    padding-left: 18px;
+}
+
+/* Subtítulos */
+section h2 {
+    font-size: 1.9rem;
+    color: #6d4c41;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Imágenes */
+section img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    margin-bottom: 18px;
+    transition: transform 0.25s ease-in-out;
+}
+
+section img:hover {
+    transform: scale(1.05);
+}
+
+/* Listas */
+ul {
+    list-style-type: square;
+    padding-left: 22px;
+    line-height: 1.7;
+    font-size: 1.15rem;
+    color: #4e342e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #7d6e65;
+    margin-top: 60px;
+    border-top: 1px solid #d7ccc8;
+    padding-top: 20px;
+}
+
+/* Adaptabilidad */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    section h2 {
+        font-size: 1.5rem;
+    }
+    ul {
+        font-size: 1rem;
+    }
+}

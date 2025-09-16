@@ -1,0 +1,62 @@
+/* estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #004D40;
+    display: flex;
+}
+
+.menu>li {
+    position: relative;
+}
+
+.menu>li>a {
+    display: block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu>li:hover {
+    background-color: #00695C;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #004D40;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+    z-index: 10;
+}
+
+.submenu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu li a:hover {
+    background-color: #00796B;
+}
+
+.submenu-parent:hover .submenu {
+    display: block;
+}
+
+section {
+    padding: 20px;
+}
